@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "411542478276",
+    "project_id": "food-delivery-app-4da94",
+    "storage_bucket": "food-delivery-app-4da94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411542478276:android:b16d31be6c76d4fa029891",
+        "android_client_info": {
+          "package_name": "com.sethi.flutter_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411542478276-55n51ik1r00d4so5anctosagjqbed61r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXZrAfN1fAT2eKsXWoJ-nSVKiDF1EJGYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411542478276-55n51ik1r00d4so5anctosagjqbed61r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
