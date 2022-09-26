@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase/interfaces/wrapper.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_firebase/interfaces/authenticate/authenticate.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -12,7 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Wrapper(),
+      debugShowCheckedModeBanner: false,
+      home: Authenticate(),
     );
   }
 }
