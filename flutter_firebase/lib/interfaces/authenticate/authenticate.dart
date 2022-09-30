@@ -120,7 +120,7 @@ class _AuthenticateState extends State<Authenticate> {
                     padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 7, 22, 47),
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(25),
                     ),
                     child: const Center(
                       child: Text(
