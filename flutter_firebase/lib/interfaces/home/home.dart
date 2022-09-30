@@ -26,19 +26,50 @@ class HomePage extends StatelessWidget {
         ),
         title: const Text('Submarine Cart'),
         actions: [
-          PopupMenuButton<int>(
-            onSelected: (item) => onSelected(context, item),
-            icon: const Icon(Icons.account_circle_outlined),
-            itemBuilder: (context) => [
-              const PopupMenuItem<int>(
-                value: 0,
-                child: Text('Settings'),
+          Theme(
+            data: Theme.of(context).copyWith(
+              iconTheme: const IconThemeData(
+                color: Colors.white,
               ),
-              const PopupMenuItem<int>(
-                value: 1,
-                child: Text('Sign Out'),
-              ),
-            ],
+              dividerColor: const Color.fromARGB(255, 94, 111, 119),
+            ),
+            child: PopupMenuButton<int>(
+              onSelected: (item) => onSelected(context, item),
+              icon: const Icon(Icons.account_circle_outlined),
+              itemBuilder: (context) => [
+                PopupMenuItem<int>(
+                  value: 0,
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.settings,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Settings'),
+                    ],
+                  ),
+                ),
+                const PopupMenuDivider(),
+                PopupMenuItem<int>(
+                  value: 1,
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.logout_outlined,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Sign Out'),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
