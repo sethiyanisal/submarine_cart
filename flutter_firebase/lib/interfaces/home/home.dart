@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase/interfaces/home/cards.dart';
 import 'package:flutter_firebase/interfaces/settings/settings.dart';
 
 const List<String> list = <String>['One'];
@@ -71,6 +72,14 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+      body: Column(
+        children: const [
+          SizedBox(
+            height: 20,
+          ),
+          FoodCard(),
         ],
       ),
     );
